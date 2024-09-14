@@ -1,0 +1,895 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+
+
+local Window = Library.CreateLib("Wotlix Hub | 1.0.6", "Ocean")
+
+
+
+
+
+--Plr tabs (done)
+
+local PlrTab = Window:NewTab("Player")
+
+local PlrSection = PlrTab:NewSection("Hacks")
+
+
+
+PlrSection:NewButton("Reset", "Reset your character", function()
+
+    game.Players.LocalPlayer.Character.Head:Destroy()
+
+end)
+
+
+
+PlrSection:NewToggle("Disable Gravity", "Disable Gravity", function(state)
+
+    if state then
+
+        worksapce.Gravity = 0
+
+    else
+
+        worksapce.Gravity = 196.2
+
+    end
+
+end)
+
+
+
+PlrSection:NewSlider("Speed", "Your WalkSpeed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+
+end)
+
+
+
+PlrSection:NewSlider("Jump Power", "Your JumpPower", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+
+end)
+
+
+
+-- Others
+
+local UniversalTab = Window:NewTab("Universal Scripts")
+
+local OthersSection = UniversalTab:NewSection("Universal Scripts")
+
+
+
+
+
+
+
+
+
+
+
+OthersSection:NewButton("Infinite Yield", "Infinite Yield", function()
+
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
+
+Window:Destroy()
+
+end)
+
+
+
+
+
+
+
+
+
+OthersSection:NewButton("Fly Script" , "Fly Script", function()
+
+
+
+
+
+loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Mfly-9410"))()
+
+
+
+Window:Destroy()
+
+end) 
+
+
+
+OthersSection:NewButton("Fly Tools Script" , "Fly Tools Script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+
+
+
+end) 
+
+
+
+
+
+OthersSection:NewButton("FPS Booster" , "FPS Booster Script", function()
+
+
+
+loadstring(game: HttpGet("https://raw.githubusercontent.com /CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+
+
+
+end) 
+
+
+
+
+
+
+
+OthersSection:NewButton("Universal Mobile Keyboard" , "Mobile Keyboard", function()
+
+
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+
+
+
+Window:Destroy()
+
+end) 
+
+
+
+
+
+OthersSection:NewButton("Fe Mobile Keyboard" , "Fe Mobile Keyboard", function()
+
+
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Keyboardv3/main/mobKeyboard"))()
+
+
+
+Window:Destroy()
+
+end) 
+
+
+
+
+
+
+
+
+
+local OtherTab = Window:NewTab("Other")
+
+local PWSection = OtherTab:NewSection("PrisonWare")
+
+
+
+
+
+PWSection:NewButton("Basic PrisonWare Script #1", "PrisonWare Script", function()
+
+
+
+
+
+loadstring(game:HttpGet("https://scriptblox.com/raw/Prison-Life-(Cars-fixed!)-PrisonWare-6510"))()
+
+
+
+Window:Destroy()
+
+end) 
+
+
+
+
+
+local BrookhavenSect = OtherTab:NewSection("Brookhaven")
+
+
+
+BrookhavenSect:NewButton("Brookhaven | #1", "Brookhaven Script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy%20gui.lua"))()
+
+
+
+end) 
+
+
+
+
+
+
+
+local CCsect = OtherTab:NewSection("Car Crushers 2")
+
+
+
+CCsect:NewButton("Car Crushers 2 | #1", "Car Crushers 2 Script", function()
+
+
+
+
+
+loadstring(game:HttpGet("https://scriptblox.com/raw/New-Car-Car-Crushers-2-BEST-AUTOFARM-AND-MORE-7496"))()
+
+
+
+Window:Destroy()
+
+end) 
+
+
+
+
+
+CCsect:NewButton("Car Crushers 2 | MAYBE NOT MOBILE #2", "Car Crushers 2 Script", function()
+
+
+
+
+
+loadstring(game:HttpGet('https://scripts.luawl.com/hosted/2399/18728/FiberHubFree.lua'))()
+
+
+
+Window:Destroy()
+
+end) 
+
+
+
+
+
+local BreakingPointSect = OtherTab:NewSection("Breaking Point")
+
+
+
+BreakingPointSect:NewButton("Breaking Point #1", "Breaking Point script", function()
+
+
+
+loadstring(game:HttpGet(("https://pastebin.com/raw/mT10xnt7"), true))()
+
+
+
+end) 
+
+
+
+BreakingPointSect:NewButton("Breaking Point #2", "Breaking Point script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMcHir/COCONUT-HUB/main/Main.lua"))()
+
+
+
+end) 
+
+
+
+local SlideOfHellSect = OtherTab:NewSection("Breaking Point")
+
+
+
+SlideOfHellSect:NewButton("Slide Of Hell #1", "Slide Of Hell Script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/Slide%20of%20Hell"))()
+
+
+
+end) 
+
+
+
+local BABFTSect = OtherTab:NewSection("Build A Boat For Treasure")
+
+
+
+BABFTSect:NewButton("Build A Boat For Treasure #1", "Build A Boat For Treasure Script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/senpaigm/Cat-Hub/main/BuildaBoat.lua"))()
+
+
+
+end) 
+
+
+
+local CarDealershipTycoonSect = OtherTab:NewSection("Car Dealership Tycoon")
+
+
+
+CarDealershipTycoonSect:NewButton("Car Dealership Tycoon #1", "Car Dealership Tycoon Script", function()
+
+
+
+pcall(function()
+
+    repeat wait() until game:IsLoaded()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/BlueLockSeason2/main/README.md"))()
+
+end)
+
+
+
+end) 
+
+
+
+
+
+local DeathBallSect = OtherTab:NewSection("Death Ball")
+
+
+
+DeathBallSect:NewButton("Death Ball #1", "Death Ball script", function()
+
+
+
+loadstring(game:HttpGet("https://github.com/Hosvile/InfiniX/releases/latest/download/main.lua",true))()
+
+
+
+
+
+end) 
+
+
+
+local CloneTycoon2Sect = OtherTab:NewSection("Clone Tycoon 2")
+
+
+
+CloneTycoon2Sect:NewButton("Clone Tycoon 2 #1", "Clone Tycoon 2 Script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HELLLO1073/RobloxStuff/main/CT-Destroyer"))()
+
+
+
+end) 
+
+
+
+local PetSim99Sect = OtherTab:NewSection("Pet Simulator 99")
+
+
+
+PetSim99Sect:NewButton("Pet Simulator 99 #1", "Pet Simulator 99 script", function()
+
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/fissurectomy/woah/main/ps99_stairway.lua'))()
+
+
+
+
+
+end) 
+
+
+
+local BedWarsSect = OtherTab:NewSection("BedWars")
+
+
+
+BedWarsSect:NewButton("BedWars #1", "BedWars script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AlSploit/AlSploit/main/Bedwars"))()
+
+
+
+
+
+end) 
+
+
+
+
+
+local LBsec = OtherTab:NewSection("Lucky Blocks Battlegrounds")
+
+
+
+LBsec:NewButton("Wotlix Lucky Blocks | 1.0.8 (Key in Description)", "script by wotlix/ key:wotlixisbetter100", function()
+
+
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Wotlix/Scripts/main/LuckyBlocks%201.0.8", true))()
+
+
+
+
+
+
+
+
+
+Window:Destroy()
+
+end) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local DoorsSection = OtherTab:NewSection("Doors")
+
+
+
+DoorsSection:NewButton("POOPDOORS", "Poopdoors script", function()
+
+
+
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+
+Window:Destroy()
+
+end) 
+
+
+
+
+
+
+
+
+
+
+
+local BladeBallSection = OtherTab:NewSection("Blade Ball")
+
+
+
+BladeBallSection:NewButton("Blade Ball #1", "Blade Ball script", function()
+
+
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/NoHaxV3/main/BladeBallNoHax%20V3"))();
+
+end) 
+
+
+
+
+
+BladeBallSection:NewButton("Blade Ball #2", "Blade Ball script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AC447724/Blade-Ball/main/c5xkvercelv5.lua.txt"))()
+
+
+
+
+
+
+
+end) 
+
+
+
+local ArsenalSection = OtherTab:NewSection("Arsenal")
+
+
+
+ArsenalSection:NewButton("Arsenal #1", "Arsenal script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+
+
+
+end) 
+
+
+
+local ArmWrestlingSection = OtherTab:NewSection("Arm Wrestling Simulator")
+
+
+
+ArmWrestlingSection:NewButton("Arm Wrestling #1", "Arm Wrestling Simulator script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FreeeScripts/FREEHub/main/Loader", true))()
+
+
+
+end) 
+
+
+
+
+
+
+
+
+
+local BloxFruitsSection = OtherTab:NewSection("Blox Fruits")
+
+
+
+BloxFruitsSection:NewButton("Blox Fruits #1", "Blox Fruits script", function()
+
+
+
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/Min_XT_V2_.lua")()
+
+
+
+end) 
+
+
+
+BloxFruitsSection:NewButton("Blox Fruits #2", "Blox Fruits script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ImTienNguyenZ/MTienHub/main/Loader.lua"))()
+
+
+
+end) 
+
+
+
+
+
+BloxFruitsSection:NewButton("Blox Fruits #3", "Blox Fruits script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+
+
+
+end) 
+
+
+
+BloxFruitsSection:NewButton("Blox Fruits #4 / Maris Hub", "Blox Fruits script", function()
+
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/marisdeptrai/Script-Free/main/Maris-Hub'))()
+
+
+
+end) 
+
+
+
+
+
+
+
+local MM2Sect = OtherTab:NewSection("Find The Button")
+
+
+
+MM2Sect:NewButton("Murder Mystery 2 #1 | No Key", "Murder Mystery 2 script | No Key", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubMurderMystery2"))()
+
+
+
+end) 
+
+
+
+
+
+MM2Sect:NewButton("Murder Mystery 2 New Year | #2", "Murder Mystery 2 script ", function()
+
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/main/mm2'))()
+
+
+
+end) 
+
+
+
+
+
+MM2Sect:NewButton("Murder Mystery 2 | #3", "Murder Mystery 2 script ", function()
+
+
+
+getgenv().mainKey = "nil";
+
+
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+
+
+
+end) 
+
+
+
+
+
+local PSXSect = OtherTab:NewSection("Pet Simulator X")
+
+
+
+PSXSect:NewButton("Pet Simulator X #1", "Pet Simulator X script", function()
+
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SKOIXLL/RIVERHUB-SKYHUB/main/WL.lua'))()
+
+
+
+end) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local YBASection = OtherTab:NewSection("YBA")
+
+
+
+YBASection:NewButton("YBA #1", "YBA script", function()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kolgie/YBA-GUI/main/yba-gui-obfuscated.lua"))()
+
+
+
+end) 
+
+
+
+
+
+
+
+local KingLegacySection = OtherTab:NewSection("King Legacy")
+
+
+
+KingLegacySection:NewButton("King Legacy #1", "King Legacy script", function()
+
+
+
+loadstring(game:HttpGet('https://btteam.net/scripts-auth/', true))()
+
+
+
+end) 
+
+
+
+local PrisonLifeSection = OtherTab:NewSection("Prison Life")
+
+
+
+PrisonLifeSection:NewButton("Prison Life #1", "Prison Life script", function()
+
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/LiverMods/xRawnder/main/Project'))()
+
+
+
+end) 
+
+
+
+
+
+local FindTheButtonSect = OtherTab:NewSection("Find The Button")
+
+
+
+FindTheButtonSect:NewButton("Find The Button #1", "Fibd The Button script", function()
+
+
+
+-- FIND THE BUTTON
+
+loadstring(game:HttpGet("https://bit.ly/3cWNFwd"))()
+
+
+
+end) 
+
+
+
+
+
+local FindTheMarkersSect = OtherTab:NewSection("Find The Markers")
+
+
+
+FindTheMarkersSect:NewButton("Find The Markers #1", "Find The Markers script", function()
+
+
+
+-- FIND THE MARKERS
+
+loadstring(game:HttpGet("https://lkhub.net/s/loader.lua"))()
+
+
+
+end) 
+
+
+
+
+
+local CreditsTab = Window:NewTab("Credits")
+
+
+
+local CreditsSect = CreditsTab:NewSection("Credits")
+
+
+
+CreditsSect:NewButton("Telegram: @WotlixScripts", "https://t.me/WotlixScripts", function()
+
+
+
+setclipboard("https://t.me/WotlixScripts")
+
+
+
+end)
+
+
+
+
+
+
+
+
+
+
+
+CreditsSect:NewButton("Discord Invite", "https://discord.com/invite/PGjXBGhdMk", function()
+
+
+
+setclipboard("https://discord.com/invite/PGjXBGhdMk")
+
+
+
+end)
+
+
+
+local ideaSect = CreditsTab:NewSection("Add Idea")
+
+
+
+ideaSect:NewButton("Add Idea in telegram", "https://t.me/WotlixScripts/19", function()
+
+
+
+setclipboard("https://t.me/WotlixScripts/19")
+
+
+
+end)
+
+
+
+ideaSect:NewButton("Add Idea in discord", "https://discord.com/invite/PGjXBGhdMk", function()
+
+
+
+setclipboard("https://discord.com/invite/PGjXBGhdMk")
+
+
+
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
